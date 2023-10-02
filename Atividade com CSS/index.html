@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function playAudio_bob() {
+            let x = document.getElementById('bob');
+            x.play();
+        }
+        function playAudio_kevin() {
+        let x = document.getElementById('kevin');
+        x.play();
+        }
+        function playAudio_stuart() {
+        let x = document.getElementById('stuart');
+        x.play();
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul id="nav_list">
+                <li><a href="#"> Films </a></li>
+                <li><a href="#"> Studio </a></li>
+                <li><a class="logo" href="#"> ILLUMINATION </a></li>
+                <li><a href="#"> Carrers </a></li>
+                <li><a href="#"> Social </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="titulo_e_cartola">
+        <h1> Minnions </h1>
+        <hr>
+        <p>
+            É certo que os Minnions fizeram sucesso e todos falam sobres eles,<br>
+            mas o que eles tem a dizer sobre si mesmo?
+        </p>
+    </div>
+
+    <div class="plano_amarelo">
+        <ul id="janelas_list">
+            <li><div class="janela"> <h3>Bob</h3> </div></li>
+            <li><div class="janela"> <h3>Kevin</h3> </div></li>
+            <li><div class="janela"> <h3>Stuart</h3> </div></li>
+        </ul>
+        <ul id="minnions_list">
+            <li>
+                <img src="img/Bob-Minion-PNG-File.png" width="428px" height="295px">
+            </li>
+            <li>
+                <img class="kevin" src="img/Kevin-Minion-PNG-Photos.png" width="395px" height="477px">
+            </li>
+            <li class="stuart">
+                <img src="img/Stuart-Minion-PNG-Clipart.png" width="306px" height="322px">
+            </li>
+        </ul>
+        <ul id="audio_list">
+            <li>
+                <audio id="bob"> <source src="audios/bob.mp3" type="audio/mpeg"></audio>
+                <div onclick="playAudio_bob()" class="borda"><button class="speak" type="button" style="font-size: 60px;"> &#128266 </button></div>
+            </li>
+            <li>
+                <audio id="kevin"> <source src="audios/kevin.mp3" type="audio/mpeg"></audio>
+                <div onclick="playAudio_kevin()" class="borda"><button class="speak" type="button" style="font-size: 60px;"> &#128266 </button></div>
+            </li>
+            <li>
+                <audio id="stuart"> <source src="audios/stuart.mp3" type="audio/mpeg"></audio>
+                <div onclick="playAudio_stuart()" class="borda"><button class="speak" type="button" style="font-size: 60px;"> &#128266 </button></div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
